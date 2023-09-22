@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function DetailsContent({ id, name, image, topic, category, description, subtopics }) {
   const imgStyle = {
-    backgroundImage: `url("../image/${image}")`,
+    backgroundImage: `url("url(${process.env.PUBLIC_URL}/image/${image})")`,
   };
 
   // Use map to generate an array of JSX elements for subtopics

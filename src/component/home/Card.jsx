@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Card({ topic , image, name, id, category }) {
   const imgStyle = {
-    backgroundImage: `url("../image/${image}")`,
+    backgroundImage: `url("url(${process.env.PUBLIC_URL}/image/${image})")`,
   };
 
   return (
