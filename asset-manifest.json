@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ReactTap/static/css/main.b6ad059e.css",
-    "main.js": "/ReactTap/static/js/main.52618ec2.js",
+    "main.js": "/ReactTap/static/js/main.a6ac288e.js",
     "index.html": "/ReactTap/index.html",
     "main.b6ad059e.css.map": "/ReactTap/static/css/main.b6ad059e.css.map",
-    "main.52618ec2.js.map": "/ReactTap/static/js/main.52618ec2.js.map"
+    "main.a6ac288e.js.map": "/ReactTap/static/js/main.a6ac288e.js.map"
   },
   "entrypoints": [
     "static/css/main.b6ad059e.css",
-    "static/js/main.52618ec2.js"
+    "static/js/main.a6ac288e.js"
   ]
 }
