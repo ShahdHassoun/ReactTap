@@ -15,7 +15,7 @@ function App() {
      <Nav/>
      <WelcomeSec/>
       <Routes>
-        <Route path='/' element={<Home/>}/>
+        <Route path='/ReactTap/' element={<Home/>}/>
         <Route path='/details/:id' element={<Details/>}/>
       </Routes>
       <Footer/>
