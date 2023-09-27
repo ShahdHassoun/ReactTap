@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-export default function Card({ topic , image, name, id, category }) {
+import RatingStars from '../shared/Stars'
+export default function Card({ topic , image, name, id, category ,rating }) {
   const imgStyle = {
-    backgroundImage: `url("url(${process.env.PUBLIC_URL}/image/${image})")`,
+    backgroundImage: `url(${process.env.PUBLIC_URL}/image/${image})`,
+
   };
 
   return (
@@ -13,7 +14,9 @@ export default function Card({ topic , image, name, id, category }) {
         <div className="card-info">
           <p className="category truncate-text">{category}</p>
           <h3 className="card-title categ2lines">{topic}</h3>
-          <div className="rating-stars"></div>
+          <div className="stars-container">
+            <RatingStars ratings={rating}/>
+          </div>
           <p className="author-name">Author: {name}</p>
         </div>
       </div>

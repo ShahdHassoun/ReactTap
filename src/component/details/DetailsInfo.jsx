@@ -1,9 +1,10 @@
 
 import React from 'react';
-
-export default function DetailsContent({ id, name, image, topic, category, description, subtopics }) {
+import RatingStars from '../shared/Stars';
+export default function DetailsContent({ id, name, image, topic, category, description, subtopics, rating }) {
   const imgStyle = {
-    backgroundImage: `url("url(${process.env.PUBLIC_URL}/image/${image})")`,
+    backgroundImage: `url(${process.env.PUBLIC_URL}/image/${image})`,
+
   };
 
   // Use map to generate an array of JSX elements for subtopics
@@ -23,7 +24,9 @@ export default function DetailsContent({ id, name, image, topic, category, descr
           <div className="card-info">
             <p className="heading-para category">{category}</p>
             <h2 className="category">{topic}</h2>
-            <div className="stars"></div>
+            <div className="stars-container">
+            <RatingStars ratings={rating}/>
+            </div>
             <p className="card-desc card-para-cat">{description}</p>
             <div className="topic-img">
               <div className="img-cont" style={imgStyle}></div>
