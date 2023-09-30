@@ -15,7 +15,7 @@ export default function Card({ topic , image, name, id, category ,rating }) {
           <p className="category truncate-text">{category}</p>
           <h3 className="card-title categ2lines">{topic}</h3>
           <div className="stars-container">
-            <RatingStars ratings={rating}/>
+            <RatingStars rating={rating}/>
           </div>
           <p className="author-name">Author: {name}</p>
         </div>
